@@ -3,12 +3,12 @@ entries:
   web-app:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2022-07-29T22:06:43.07119+01:00"
+    created: "2022-07-29T22:08:53.755593+01:00"
     description: A Helm chart for Kubernetes
-    digest: 5217b713379a8de3bc5c1178abba21a4e5626c6748b07f283f363cce6fac6f22
+    digest: 9ab8519760a58889ffa1deedc64008de9549dfdc266be6faf5930808f4e82b67
     name: web-app
     type: application
     urls:
     - charts/web-app-0.0.1.tgz
     version: 0.0.1
-generated: "2022-07-29T22:06:43.070433+01:00"
+generated: "2022-07-29T22:08:53.754858+01:00"
