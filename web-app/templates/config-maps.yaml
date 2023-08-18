@@ -1,17 +1,19 @@
-#{{- $dot := . }}
-#{{- if .Values.configMaps -}}
-#{{- $additionalLabels := .Values.additionalLabels -}}
-#{{- range .Values.configMaps }}
-#---
-#apiVersion: v1
-#kind: ConfigMap
-#metadata:
-#  name: "{{ .name }}"
-#  labels:
-#    app.kubernetes.io/instance: {{ $dot.Release.Name }}
-#    app.kubernetes.io/managed-by: {{ $dot.Release.Service }}
-#    {{- toYaml $additionalLabels | nindent 4 }}
-#data:
-#  {{- toYaml .data | nindent 2 }}
-#{{- end }}
-#{{- end }}
+{{- $dot := . }}
+{{- if .Values.configMaps -}}
+{{- $additionalLabels := .Values.additionalLabels -}}
+{{- range .Values.configMaps }}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: "{{ .name }}"
+  labels:
+    app.kubernetes.io/instance: {{ $dot.Release.Name }}
+    app.kubernetes.io/managed-by: {{ $dot.Release.Service }}
+    {{- if $additionalLabels }}
+        {{- toYaml $additionalLabels | nindent 4 }}
+    {{- end }}
+data:
+  {{- toYaml .data | nindent 2 }}
+{{- end }}
+{{- end }}
