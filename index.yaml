@@ -2,8 +2,18 @@ apiVersion: v1
 entries:
   web-app:
   - apiVersion: v2
+    appVersion: 0.0.12
+    created: "2023-08-18T10:33:03.397173+01:00"
+    description: Deploy a simple web-app
+    digest: 2122f836c9a0373300f1616174a67c3b3883ba54b430419ede0e0ed99bd8e4e1
+    name: web-app
+    type: application
+    urls:
+    - charts/web-app-0.0.12.tgz
+    version: 0.0.12
+  - apiVersion: v2
     appVersion: 0.0.11
-    created: "2023-08-18T10:22:34.803192+01:00"
+    created: "2023-08-18T10:33:03.396755+01:00"
     description: Deploy a simple web-app
     digest: 1542c3e44b7e98b0c0580f17ca272006b0fec68fb28100c8390f08f7c9c365fe
     name: web-app
@@ -13,7 +23,7 @@ entries:
     version: 0.0.11
   - apiVersion: v2
     appVersion: 0.0.10
-    created: "2023-08-18T10:22:34.801079+01:00"
+    created: "2023-08-18T10:33:03.395552+01:00"
     description: Deploy a simple web-app
     digest: 299ae33ff0622bdce9603dc8d5a8e42166c433b2f4307be287ecec2efde1b43c
     name: web-app
@@ -23,7 +33,7 @@ entries:
     version: 0.0.10
   - apiVersion: v2
     appVersion: 0.0.9
-    created: "2023-08-18T10:22:34.805156+01:00"
+    created: "2023-08-18T10:33:03.400032+01:00"
     description: A Helm chart for Kubernetes
     digest: 69c98e684885d959c9ca223525318911ed268681a8f97186386a37b46f80a411
     name: web-app
@@ -33,7 +43,7 @@ entries:
     version: 0.0.9
   - apiVersion: v2
     appVersion: 0.0.8
-    created: "2023-08-18T10:22:34.804912+01:00"
+    created: "2023-08-18T10:33:03.399576+01:00"
     description: A Helm chart for Kubernetes
     digest: a42b799014e890aa926b083994031396589b19024928b65d501b50b714f790a0
     name: web-app
@@ -43,7 +53,7 @@ entries:
     version: 0.0.8
   - apiVersion: v2
     appVersion: 0.0.7
-    created: "2023-08-18T10:22:34.804661+01:00"
+    created: "2023-08-18T10:33:03.399122+01:00"
     description: A Helm chart for Kubernetes
     digest: 63975dec1c0dccaa32072751953283548fdb7e32397b8d5bf0e1659b28d05532
     name: web-app
@@ -53,7 +63,7 @@ entries:
     version: 0.0.7
   - apiVersion: v2
     appVersion: 0.0.6
-    created: "2023-08-18T10:22:34.80439+01:00"
+    created: "2023-08-18T10:33:03.398683+01:00"
     description: A Helm chart for Kubernetes
     digest: 935a652e99c852100c6aa2523085e5d58b48e8ea1c7561b166c9a2ca1fa565c4
     name: web-app
@@ -63,7 +73,7 @@ entries:
     version: 0.0.6
   - apiVersion: v2
     appVersion: 0.0.4
-    created: "2023-08-18T10:22:34.804114+01:00"
+    created: "2023-08-18T10:33:03.39829+01:00"
     description: A Helm chart for Kubernetes
     digest: 1df9e384398874d1877cf5abfd076a2db4f15b8c5da944138a16aca036298ecb
     name: web-app
@@ -73,7 +83,7 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: 0.0.3
-    created: "2023-08-18T10:22:34.803843+01:00"
+    created: "2023-08-18T10:33:03.397852+01:00"
     description: A Helm chart for Kubernetes
     digest: 3cf7ad59ccded42788eff542f1cff563d43f12a0ec2fdebff35fca4f2fd86a73
     name: web-app
@@ -83,7 +93,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 0.0.2
-    created: "2023-08-18T10:22:34.803574+01:00"
+    created: "2023-08-18T10:33:03.397488+01:00"
     description: A Helm chart for Kubernetes
     digest: c8277cf73535c1e2b154162889ae481d9f4b47d435c5dd9ccbbf9c19f86efb14
     name: web-app
@@ -93,7 +103,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-08-18T10:22:34.800784+01:00"
+    created: "2023-08-18T10:33:03.395115+01:00"
     description: A Helm chart for Kubernetes
     digest: 9ab8519760a58889ffa1deedc64008de9549dfdc266be6faf5930808f4e82b67
     name: web-app
@@ -101,4 +111,4 @@ entries:
     urls:
     - charts/web-app-0.0.1.tgz
     version: 0.0.1
-generated: "2023-08-18T10:22:34.800401+01:00"
+generated: "2023-08-18T10:33:03.394349+01:00"
