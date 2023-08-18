@@ -8,6 +8,8 @@ kind: ConfigMap
 metadata:
   name: "{{ .name }}"
   labels:
+    app: {{ include "web-app.name" $dot }}
+    helm.sh/chart: {{ include "web-app.chart" $dot }}
     app.kubernetes.io/instance: {{ $dot.Release.Name }}
     app.kubernetes.io/managed-by: {{ $dot.Release.Service }}
     {{- if $additionalLabels }}
