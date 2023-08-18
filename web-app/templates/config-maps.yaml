@@ -1,0 +1,19 @@
+{{- $dot := . }}
+  {{- if .Values.configMaps -}}
+  {{- $additionalLabels := .Values.additionalLabels -}}
+  {{- range .Values.configMaps }}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+    name: {{ .name }}
+    labels:
+        app: {{ include "web-app.name" $dot }}
+        helm.sh/chart: {{ include "web-app.chart" $dot }}
+        app.kubernetes.io/instance: {{ $dot.Release.Name }}
+        app.kubernetes.io/managed-by: {{ $dot.Release.Service }}
+      {{- toYaml $additionalLabels | nindent 4 }}
+data:
+  {{- toYaml .data | nindent 2 }}
+  {{- end }}
+  {{- end }}
